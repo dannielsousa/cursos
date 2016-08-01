@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+	<link rel="stylesheet" href="css/galeria.css">
+	<script src="../lib/jquery-3.1.0.min.js"></script>
+	<script src="../lib/jquery.cycle.all.js"></script>
+
+
+	<script>
+		$(document).ready(function(){
+			$("#esconde").cycle({
+				fx: 'fade',
+				speed: 2000,
+				timeout: 3000,
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="geral">
+		<h1>Galeria em Jquery e JavaScript</h1>
+		<div id="miniaturas">
+			<ul class="lista">
+				<li class="item selected" id="parte1"> <a href="#galeria1"> <img src="../imagens/1.jpg" width="75" height="50" alt=""><span>Programação Web</span></a> </li>
+				<li class="item" id="parte2"> <a href="#galeria2"> <img src="../imagens/2.jpg" width="75" height="50" alt=""><span>Programação de Jogos</span></a> </li>
+				<li class="item" id="parte3"> <a href="#galeria3"> <img src="../imagens/3.jpg" width="75" height="50" alt=""><span>Programação Desktop</span></a> </li>
+				<li class="item" id="parte4"> <a href="#galeria4"> <img src="../imagens/4.jpg" width="75" height="50" alt=""><span>Loja Virtual</span></a> </li>
+			</ul>
+			<div id="esconde">
+				<div id="galeria1" class="painel" style="">
+					<img src="../imagens/1.jpg" width="420" height="250" alt="">
+					<div class="info">
+						<h2><a href="#galeria1">Programação Web</a></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, cum unde soluta assumenda rem voluptas voluptatum, laudantium repellendus tempora! Enim sequi beatae, voluptatem quos, debitis dolorum quisquam quae ex accusamus, aliquid aut expedita animi reiciendis tempora iste mollitia id magni! <a href="">Veja o Video</a></p>
+					</div>
+				</div>
+				<div id="galeria2" class="painel" style="">
+					<img src="../imagens/2.jpg" width="420" height="250" alt="">
+					<div class="info">
+						<h2><a href="#galeria2">Programação De Jogos</a></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quibusdam rem, nulla assumenda ipsam obcaecati quaerat asperiores est quos, laborum totam doloremque explicabo sint dolores et sapiente, molestiae. Tenetur, odio. <a href="">Veja o Video</a></p>
+					</div>
+				</div>
+				<div id="galeria3" class="painel" style="">
+					<img src="../imagens/3.jpg" width="420" height="250" alt="">
+					<div class="info">
+						<h2><a href="#galeria3">Programação Desktop</a></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, assumenda autem saepe reiciendis laudantium iste natus minima ipsam quam modi repudiandae non minus neque velit delectus sit nesciunt facilis aperiam! <a href="">Veja o Video</a></p>
+					</div>
+				</div>
+				<div id="galeria4" class="painel" style="">
+					<img src="../imagens/4.jpg" width="420" height="250" alt="">
+					<div class="info">
+						<h2><a href="#galeria4">Loja Virtual</a></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis dolorum, culpa rerum quo veniam voluptatem nesciunt eveniet, repellendus quis voluptates numquam porro magni ea harum molestias voluptas autem temporibus. <a href="">Veja o Video</a></p>
+					</div>
+				</div><!--/galeria4-->
+			</div> <!--/esconde -->
+		</div><!--/miniaturas-->		
+	</div><!--/geral-->
+</body>
+</html>

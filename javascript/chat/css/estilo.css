@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+#formulario {
+    width: 500px;
+    height: 100px;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #333;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -250px;
+}
+
+
+#formulario span {
+    font: 18px;
+    font-family: "Trebucht MS", tahoma, arial;
+    color: #036;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#formulario input {
+    padding: 5px;
+    width: 485px;
+    border: 1px solid #ccc;
+    outline: none;
+    font: 16px tahoma, arial;
+    color: #666;
+}
+#formulario input[type=email]:focus {
+    border-color: #036;
+}
+
+#formulario input[type=submit] {
+    padding: 4px 6px;
+    background: #069;
+    font: 15px tahoma, arial;
+    color: #fff;
+    border: solid 1px #036;
+    float: left;
+    margin-top: 5px;
+    text-align: center;
+    width: 95px;
+    text-shadow: #000 0 1px 0;
+    transition: all .5s;
+    border-radius: 10px;
+}
+
+#formulario input[type=submit]:hover {
+    cursor: pointer;
+    background: #FFF;
+    color: #06f;
+    transition: all .5s;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exemplo 03 - Galeria com Banner</title>
+	<link rel="stylesheet" href="estilo.css">
+	<script src="../lib/jquery-3.1.0.min.js"></script>
+	<script src="../lib/jquery.cycle.all.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$(".img").mousemove(function(){
+				link = $(this).attr('src');
+				$("#img_g").attr("src",link);
+			});
+		});
+	</script>
+</head>
+<body>
+
+	<div class="conteudo">
+		<div class="galeria">
+			<img id="img_g" src="../imagens/1.jpg" alt="">
+		</div>
+		<div class="mini">
+			<img class="img" src="../imagens/1.jpg" alt="">
+			<img class="img" src="../imagens/2.jpg" alt="">
+			<img class="img" src="../imagens/3.jpg" alt="">
+			<img class="img" src="../imagens/4.jpg" alt="">
+			<img class="img" src="../imagens/5.jpg" alt="">
+		</div>
+	</div>
+
+	
+</body>
+</html>

@@ -1,0 +1,73 @@
+.conteudo {
+	width: 800px;
+	height: 600px;
+	margin: auto;
+	background-color: #fff;
+}
+
+.topo {
+	width: 800px;
+	height: 180px;
+	margin: auto;
+	background-color: #666;
+}
+
+.slide {
+	width: 300px;
+	height: 290px;
+	margin: auto;
+	background-color: #fff;
+	float: left;
+	margin: 10px 10px 0px 10px;
+	text-align: center;
+	border: solid 1px black;
+	border-right: 10px;
+	overflow: hidden;
+	padding: 2px;
+}
+
+.slideshow ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.materia1 {
+	width: 455px;
+	height: 300px;
+	background-color: #666; 
+	margin: 10px 10px 0px 0px;
+	float: right;
+}
+
+.paginador {
+	width: 300px;
+	height: auto;
+	text-align: center;
+}
+
+.paginador a {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	vertical-align: baseline;
+	cursor: pointer;
+	text-decoration: none;
+	font: 10px Arial;
+	padding: .5em 1em .55em ;
+	margin-top: 2px;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	border-radius: 3px;
+	color: #d7d7d7;
+	border: solid 1px #333;
+	background: #333;
+	background-image: linear-gradient(to top, #666, #000);
+	filter: DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorsrt='#000000');
+}
+
+.paginador a:hover {
+	text-decoration: none;
+	background: #000;
+	background-image: linear-gradient(to top, #444, #000);
+	filter: DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorsrt='#000000' );
+}
