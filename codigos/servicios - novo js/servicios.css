@@ -1,0 +1,79 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.main {
+	margin: 40px;
+}
+
+.service_box {
+	/*border: 3px;
+	border-style: groove;
+	border-color: #407FD1;*/
+	width: 309px;
+	overflow: auto;
+	padding: 18px;	
+}
+
+.service_title {
+	font-size: 23px;
+	font-variant: small-caps;
+}
+
+.service_description {
+	font-size: 14px;
+}
+
+.btn{
+	padding: 7px 6px;
+	text-align: center;
+	cursor: pointer;
+	color: #fff;
+	border: none;
+	box-shadow: 2px -2px #9DB5D4;
+	text-decoration: none;
+}
+
+.btn.btn-available {
+	background-color: #407FD1;
+}
+.btn.btn-available:hover {background-color: #2A568F}
+
+.btn.btn-available:active {
+  background-color: #2A568F;
+  box-shadow: 0 0;
+}
+
+.btn.btn-off {
+	cursor: not-allowed !important;
+}
+button:disabled {
+	background-color: #C6CED8;
+}
+
+.fa.fa-plus-circle {
+	color: #416DA7;
+	font-size: 15px;
+}
+
+.fa.fa-minus-circle {
+	color: #768DAB;
+	font-size: 15px;
+}
+
+.fa.fa-arrow-left {
+	color: #457593;
+	text-decoration: none;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+	transition: transform .8s cubic-bezier(.68,-0.55,.27,1.55);
+	font-size: 15px;
+}
+
+.fa.fa-arrow-left:hover {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+@media screen and (max-height: 450px) {
+  .sidemenu {padding-top: 15px;}
+  .sidemenu a {font-size: 14px;}
+}
