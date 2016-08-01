@@ -1,0 +1,79 @@
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+body {
+    background: #FFF1d6 url(../images/noise.png);
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+    line-height: 1.6; 
+    /*line-height de 1.6, sem nenhuma medida especíca - como px ou em - indica para a altura das linhas ficarem com 160% da altura da fonte. Caso ela esteja em 16px, o line-height será 25px.
+    */
+    
+}
+.places {
+    float: left;
+    width: 660px;
+}
+.place {
+    border-color: #CCC #999 #CCC #999;
+    border: solid 1px #CCC;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #FFF;
+}
+
+.place h2 {
+    border-bottom: 1px dashed #7e9f19;
+    margin: 0;
+}
+
+.place a {
+    color: #2c88a7;
+    font-weight: bold;
+}
+
+.place img {
+    border: 1px solid #7e9f19;
+    float: left;
+    margin: 10px 10px 0 0;
+    padding: 2px;
+}
+
+h1 a {
+    color: #7e9f19;
+    text-decoration: none;
+    transition: 1s;
+}
+
+h1 a:hover {
+    background-color: #7e9f19;
+    color: #fff;
+    transition: 1s;
+}
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+.sidenote {
+    background-color: #fffbe4;
+    border: 1px solid #c9bc8f;
+    float: right;
+    padding: 10px;
+    width: 260px;
+}
+
+.sidenote h3 {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.sidenote ol {
+    font-size: 12px;
+}

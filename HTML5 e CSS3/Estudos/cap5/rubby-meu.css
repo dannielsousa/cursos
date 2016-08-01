@@ -1,0 +1,73 @@
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+@font-face {
+    font-family: "IconicFill";
+    src: url(../variados/font/iconic_fill.woff) format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+section {
+    background-color: #f7f7f7;
+    border: solid 1px rgba(0,0,0, 0.3);
+    margin: 10px;
+    padding: 10px;
+}
+
+h1 {
+    color: crimson;
+    text-align: center;
+}
+
+h2 { 
+    margin-left: 16%;
+
+}
+
+.green {
+    background: #6EC437;
+    border: solid 1px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    color: #fff;
+    height: 26px;
+    margin-left: 16%;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+    width: 122px;
+}
+
+.vendas ul {
+    background-image: linear-gradient(to bottom, #4cb3f0, #008EDB);
+    list-style: none;
+    width: 292px;
+    padding: 0 0 0 15px;
+}
+
+.vendas li {
+    display: inline-block;
+    height: 35px;
+    padding-top: 10px;
+    /* padding-left: calc(50% - 100px); */
+    width: 100%;
+
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a::before {
+    font-family: "IconicFill";
+    font-size: 20px;
+    margin-right: 10px;
+}
+.fisica::before {
+    content: "\e00b";
+}
+.digital::before {
+    content: "\e045";
+}
+.completa::before {
+    content: "\e022";
+}

@@ -1,0 +1,20 @@
+••••••••••••••••••• Elementos de um link que podem ser alterados.•••••••••••••••••••••••••
+
+
+• :focus, para elementos que estejamfocados pelo teclado, como links ou campos de um formulário;
+• :visited, para endereços já visitados pelo usuário;
+• :active, para o instante onde o elemento está sendo pressionado pelomouse
+
+
+••••••••••••••••••••••••
+••
+•• Elementos HTML5
+••
+••••••••••••••••••••••••
+
+• section - utilizado para representar uma seção genérica, geralmente com um cabeçalho próprio e o seu conteúdo;
+• nav - representação de um bloco principal de links de navegação - nem todo grupo de links deve ser tratado como um nav;
+• aside - a tag aside pode ser utilizada para representar uma seção de conteúdo secundário ou auxiliar a outro pedaço de maior importância. Citações, links de referência ou notas adicionais, por exemplo;
+• header - referente ao cabeçalho de uma seção especíca (ou da própria página), contendo títulos, introduções e outros elementos similares;
+• footer - o rodapé referente a um bloco de conteúdo;
+• article - nalmente, o article identica o conteúdo em si, como uma notícia de um portal, um post em blog ou um comentário em uma lista de comentários. Figura

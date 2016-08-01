@@ -1,0 +1,96 @@
+h1 {
+    color: #bd2c00;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.available {
+    background-color: #6cc644;
+    border-radius: 3px;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 3px 7px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+}
+
+ul {
+    background-color: #56b4ef;
+    background-image: linear-gradient(to left, #56b4ef, #148eda);
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 5px;
+    float: left;
+    list-style: none;
+    margin: 10px 10px 0 0;
+    padding: 0;
+    width: 230px;
+}
+
+@font-face {
+    font-family: "IF";
+    src: url("../variados/font/iconic_fill.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon::before {
+    font-family: "IF";
+    margin: 0 5px;
+}
+
+.paper::before {
+    content:"\e00b";
+}
+
+.digital::before {
+    content:"\e044";
+}
+
+.package::before {
+    content:"\e022";
+}
+
+.icon {
+    color: #FFF;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.7);
+}
+
+.icon:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+
+.icon.paper {
+    border-top: none;
+}
+
+.icon.package {
+    border-bottom: none;
+}
+
+.book {
+    background-color: #FAFAFA;
+    background-image: linear-gradient(#FAFAFA, #EEE);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 600px;
+    margin-top: 10px;
+    margin-left: calc(50% - 300px);
+}
+
+.clear {
+    clear:both;
+}

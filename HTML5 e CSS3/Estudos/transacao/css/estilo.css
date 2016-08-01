@@ -1,0 +1,73 @@
+table {
+    width: 500px;
+}
+
+td {
+    border: 1px dotted #666;
+    padding: 5px;
+}
+
+td a {
+    color: #3B5998;
+}
+
+.expense, .profit, .actions {
+    text-align: right;
+}
+
+.expense, .profit {
+    font-weight: bold;
+}
+
+.expense {
+    color: red;
+}
+
+.profit {
+    color: green;
+}
+
+.actions a {
+    background-color: #3B5998;
+    color: white;
+    font-size: 0.9em;
+    padding: 2px 5px;
+    text-decoration: none;
+}
+
+@media print  {
+    * {
+        color: #000 !important;
+        
+    }
+    table {
+        widows: 100%;
+    }
+    td {
+        border-color: #000;
+    }
+    a::after {
+        content: "("attr(href)")";
+        margin-left: 2px;
+    }
+    .actions {
+        display: none;
+    }
+    
+    .expense::before {
+        content: "-";
+    }
+    
+    .expense::after {
+        content: " - Desepesa";
+    }
+    
+    .profit::before {
+        content: "+";
+    }
+    
+    .profit::after{
+        content: " - Receita"
+    }
+    
+}
