@@ -13,15 +13,12 @@
     <link rel="stylesheet" href="css/estilo.css">
 
     <?php
-        if (isset($_POST['email']) && ($_POST['acao'] == 'logar')) {
+        if (isset($_POST['acao']) && ($_POST['acao'] == 'logar')) {
             $email = strip_tags(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING));
-            echo(var_dump($email));
             if ($email == '') {
             }
             else {
-                echo("to aqui");
                 $pegar_user = BD::conn() -> prepare('SELECT id FROM `usuarios` WHERE email = ?');
-                echo(var_dump($pegar_user));
                 
                 $pegar_user -> execute(array($email));
 
@@ -46,11 +43,11 @@
 <body>
     <div id="formulario">
         <span>Digite seu email.</span>
-        <form action="" method="email" enctype="multipart/form-data">
+        <form action="" method="post" enctype="multipart/form-data">
             <label>
                 <input type="text" name="email">
             </label>
-            <input type="hidden" nome="acao" value="logar">
+            <input type="hidden" name="acao" value="logar">
             <input type="submit" value="logar">
         </form>
     </div>
